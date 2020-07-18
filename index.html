@@ -2,30 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data storage component challenge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon-32x32.png">
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="./static/css/styles.css">
+  <!-- Tipografia Raleway 400 / 700-->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Data storage component</title>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<main class="main_container">
+  <section class="primary_container">
+    <img class="logo" src="./static/img/logo.svg" alt="Logo de fylo de la pagina">
+    <div class="container_icons">
+      <div>
+        <img class="icon" src="./static/img/icon-document.svg" alt="Imagen de un documento">
+      </div>
+      <div>
+        <img class="icon" src="./static/img/icon-folder.svg" alt="Imagen de una carpeta">
+      </div>
+      <div>
+        <img class="icon" src="./static/img/icon-upload.svg" alt="Imagen de una nube">
+      </div>
+    </div>
+  </section>
+  <section class="secondary_container">
+    <p class="copy">You’ve used 815 GB of your storage</p>
+    <meter class="progress_bar" min="0" max="100" value="70"></meter>
+    <p class="copy">0 GB</p>
+    <p class="copy">1000 GB</p>
+  </section>
+</main>
 </body>
 </html>
