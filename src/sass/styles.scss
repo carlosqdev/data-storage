@@ -1,5 +1,6 @@
 //Primary
-$Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+$gradientStart: hsl(6, 100%, 80%);
+$gradientEnd: hsl(335, 100%, 65%);
 $white: #FFF;
 // Neutral
 $paleBlue: hsl(243, 100%, 93%);
@@ -75,11 +76,25 @@ body {
                 font-weight: 700;
             }
         }
-        .progress_bar {
-            width: 14.5rem;
-            height: 30px;
+        .progress {
             margin-left: 2rem;
-            margin-bottom: 0px;
+            background-color: $veryDarkBlue;
+            border-radius: 20px;
+            height: 20px;
+            width: 240px;
+            .progress-done {
+                background: linear-gradient(to left, $gradientStart, $gradientEnd);
+                box-shadow: 0 3px 3px -5px $veryDarkBlue, 0 2px 5px $veryDarkBlue;
+                border-radius: 20px;
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                height: 100%;
+                width: 0;
+                transition: 1s ease;
+            }
         }
         .container_copy {
             display: flex;

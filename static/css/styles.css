@@ -69,11 +69,25 @@ body {
   color: #dddbff;
   font-weight: 700;
 }
-.main_container .secondary_container .progress_bar {
-  width: 14.5rem;
-  height: 30px;
+.main_container .secondary_container .progress {
   margin-left: 2rem;
-  margin-bottom: 0px;
+  background-color: #0c122c;
+  border-radius: 20px;
+  height: 20px;
+  width: 240px;
+}
+.main_container .secondary_container .progress .progress-done {
+  background: linear-gradient(to left, #ffa399, #ff4d97);
+  box-shadow: 0 3px 3px -5px #0c122c, 0 2px 5px #0c122c;
+  border-radius: 20px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  height: 100%;
+  width: 0;
+  transition: 1s ease;
 }
 .main_container .secondary_container .container_copy {
   display: flex;
