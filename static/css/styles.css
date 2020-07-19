@@ -4,7 +4,7 @@ body {
   color: #dddbff;
   padding: 0px;
   margin: 0px;
-  background-image: url(./img/bg-mobile.png);
+  background-color: #0c122c;
 }
 
 .main_container {
@@ -81,7 +81,7 @@ body {
   background: linear-gradient(to left, #ffa399, #ff4d97);
   box-shadow: 0 3px 3px -5px #0c122c, 0 2px 5px #0c122c;
   border-radius: 20px;
-  color: #FFF;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +94,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-left: 2rem;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   margin-bottom: 4rem;
 }
 .main_container .secondary_container .container_copy span {
@@ -114,7 +114,7 @@ body {
   border-radius: 8px;
   width: 200px;
   height: 80px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .main_container .capacity .wrapper .copy_capacity {
   color: #0c122c;
@@ -128,6 +128,53 @@ body {
   font-weight: 700;
   margin-top: 2rem;
   margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main_container {
+    flex-direction: row;
+    justify-content: center;
+    background: url(../img/bg-desktop.png) no-repeat;
+    background-position: bottom;
+  }
+  .main_container .primary_container {
+    position: relative;
+    top: -100px;
+    width: 350px;
+    margin-left: 280px;
+  }
+  .main_container .secondary_container {
+    position: relative;
+    top: -80px;
+    width: 550px;
+  }
+  .main_container .secondary_container .copy {
+    margin-left: 2rem;
+    text-align: left;
+  }
+  .main_container .secondary_container .progress {
+    width: 490px;
+    margin-right: 2rem;
+  }
+  .main_container .secondary_container .container_copy {
+    margin-bottom: 2rem;
+  }
+  .main_container .capacity {
+    top: -150px;
+    left: -200px;
+  }
+  .main_container .capacity .wrapper {
+    width: 150px;
+    height: 60px;
+  }
+  .main_container .capacity .wrapper .copy_capacity {
+    margin-top: 0.5rem;
+    font-size: 35px;
+  }
+  .main_container .capacity .wrapper .copy_capacity_text {
+    font-size: 15px;
+    margin-top: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
